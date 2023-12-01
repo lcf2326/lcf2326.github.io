@@ -1,0 +1,171 @@
+/*
+Student Name: Kartik Rameshchandra Rana
+Student ID: C0915199
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile view */
+    body {
+        font-size: 16px; /* Adjust the base font size for better readability on mobile */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em; /* Adjust heading font sizes */
+    }
+
+    p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+
+    nav a {
+        display: block; /* Display navigation links as block elements for better stacking */
+        margin: 10px 0; /* Add spacing between navigation links */
+    }
+
+    main {
+        margin: 10px; /* Adjust the main content margin */
+        padding: 15px; /* Add padding for better spacing */
+    }
+
+    section {
+        margin-bottom: 20px; /* Add extra margin for section elements */
+    }
+
+    img {
+        max-width: 100%; /* Make images responsive within their container */
+        height: auto; /* Maintain the aspect ratio of images */
+    }
+
+    .desktop-only {
+        display: none; /* Hide elements with class 'desktop-only' on mobile */
+    }
+
+    .tablet-only {
+        display: none; /* Hide elements with class 'desktop-only' on mobile */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablet view */
+    .desktop-only {
+        display: none; /* Hide elements with class 'desktop-only' on tablet */
+    }
+
+    .mobile-only {
+        display: none; /* Hide elements with class 'mobile-only' on tablet */
+    }
+
+    body {
+        font-size: 18px; /* Adjust the base font size for better readability on tablets */
+    }
+
+    h1, h2, h3 {
+        font-size: 2em; /* Adjust heading font sizes */
+    }
+
+    p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+
+    nav a {
+        margin: 0 20px; /* Add more spacing between navigation links */
+    }
+
+    main {
+        margin: 20px; /* Adjust the main content margin */
+        padding: 30px; /* Add padding for better spacing */
+    }
+
+    section {
+        margin-bottom: 30px; /* Add extra margin for section elements */
+    }
+
+    .tablet-only {
+        display: block; /* Display elements with class 'tablet-only' on tablets */
+    }
+
+    img {
+        max-width: 90%; /* Make images responsive within their container */
+        height: auto; /* Maintain the aspect ratio of images */
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Styles for desktop view */
+    body {
+        font-size: 20px; /* Increase the base font size for desktop readability */
+    }
+    
+    h1, h2, h3 {
+        font-size: 2.5em; /* Increase heading font sizes for emphasis */
+    }
+
+    p {
+        font-size: 18px; /* Adjust paragraph font size for better readability */
+    }
+
+    nav a {
+        margin: 0 30px; /* Add more spacing between navigation links */
+    }
+
+    main {
+        margin: 40px; /* Adjust the main content margin for a spacious look */
+        padding: 40px; /* Add padding for better spacing */
+    }
+
+    section {
+        margin-bottom: 40px; /* Add extra margin for section elements */
+    }
+
+    img {
+        max-width: 100%; /* Allow images to take full width within their container */
+        height: auto; /* Maintain the aspect ratio of images */
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Create a three-column grid for desktop */
+        gap: 20px; /* Add gap between grid items */
+    }
+
+    nav a:hover {
+        background-color: #001f3f; /* Dark blue background on hover */
+        color: white; /* White text color on hover */
+    }
+
+    .desktop-only {
+        display: block; /* Display elements with class 'desktop-only' on desktop */
+    }
+
+    .tablet-only {
+        display: none; /* Hide elements with class 'tablet-only' on desktop */
+    }
+
+    .mobile-only {
+        display: none; /* Hide elements with class 'mobile-only' on desktop */
+    }
+}
+
+/* Style pseudo-classes for navigation links */
+nav a {
+    text-decoration: none;
+    color: #001f3f; /* dark blue*/
+    /* margin: 0 15px; */
+    padding: 8px 12px;
+    border: 2px solid #001f3f; /* Border color matches the text color */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: #001f3f; /* Dark blue background on hover */
+    color: white; /* White text color on hover */
+}

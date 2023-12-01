@@ -1,0 +1,53 @@
+/* Styles for the form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Styles for the fieldset and legend */
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #008080;
+}
+
+/* Styles for labels and form elements */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #008080;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Styles for the checkbox */
+input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+/* Styles for the buttons */
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005662;
+}
